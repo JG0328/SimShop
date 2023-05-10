@@ -4,6 +4,8 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
 
+    public bool canMove = true;
+
     private Rigidbody2D _rb2d;
 
     private Vector2 _input;
@@ -22,7 +24,10 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _input.Normalize();
-        _rb2d.velocity = _input * moveSpeed;
+        if (canMove)
+        {
+            _input.Normalize();
+            _rb2d.velocity = _input * moveSpeed;
+        }
     }
 }
