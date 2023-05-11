@@ -17,12 +17,18 @@ public class ItemButton : MonoBehaviour
 
     public TMP_Text txtAction;
 
-    public void SetupBuyButton(ItemScriptableObject item)
+    // All item buttons share the same structure, only their action ('buy', 'sell', 'equip') changes.
+    private void SetupBaseButton(ItemScriptableObject item)
     {
         txtName.SetText(item.itemName);
         txtDescription.SetText(item.itemDescription);
         txtType.SetText(Enum.GetName(typeof(Item.Type), item.itemType));
         imgIcon.sprite = item.itemIcon;
+    }
+
+    public void SetupBuyButton(ItemScriptableObject item)
+    {
+        SetupBaseButton(item);
 
         actionButton.onClick.AddListener(() =>
         {
@@ -30,5 +36,17 @@ public class ItemButton : MonoBehaviour
         });
 
         txtAction.SetText($"Buy for ${item.buyPrice}");
+    }
+
+    public void SetupSellButton(ItemScriptableObject item)
+    {
+        SetupBaseButton(item);
+
+        actionButton.onClick.AddListener(() =>
+        {
+            ShopManager.Instance.SellItem(item);
+        });
+
+        txtAction.SetText($"Sell for ${item.sellPrice}");
     }
 }

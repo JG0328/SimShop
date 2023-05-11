@@ -374,7 +374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.36912602, g: 0.7178812, b: 0.745283, a: 1}
+  m_Color: {r: 0.36862746, g: 0.74509805, b: 0.43410033, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -857,7 +857,7 @@ GameObject:
   - component: {fileID: 4537502294789907788}
   - component: {fileID: 4284043459030232969}
   m_Layer: 5
-  m_Name: ItemButton
+  m_Name: BuyButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -909,7 +909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.49019608, g: 0.7254902, b: 0.638188, a: 1}
+  m_Color: {r: 0.49019608, g: 0.6176218, b: 0.7254902, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

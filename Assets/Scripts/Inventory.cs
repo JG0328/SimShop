@@ -37,4 +37,9 @@ public class Inventory : MonoBehaviour
     {
         items.Add(item.itemId);
     }
+
+    public void RemoveItem(ItemScriptableObject item)
+    {
+        items.Remove(item.itemId);
+    }
 }

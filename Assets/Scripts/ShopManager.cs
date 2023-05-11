@@ -11,9 +11,15 @@ public class ShopManager : MonoBehaviour
 
     public ItemButton buyButton;
 
+    public ItemButton sellButton;
+
     public List<ItemButton> buyButtons = new();
 
+    public List<ItemButton> sellButtons = new();
+
     public GameObject shopItemsContainer;
+
+    public GameObject inventoryItemsContainer;
 
     public static ShopManager Instance;
 
@@ -48,6 +54,24 @@ public class ShopManager : MonoBehaviour
             button.SetupBuyButton(item);
             buyButtons.Add(button);
         }
+
+        // Inventory items
+
+        foreach (ItemButton button in sellButtons)
+        {
+            Destroy(button.gameObject);
+        }
+
+        sellButtons.Clear();
+
+        IEnumerable<ItemScriptableObject> playerItems = items.Where(i => playerItemsIds.Contains(i.itemId)).OrderBy(i => i.itemId);
+
+        foreach (ItemScriptableObject item in playerItems)
+        {
+            ItemButton button = Instantiate(sellButton, inventoryItemsContainer.transform);
+            button.SetupSellButton(item);
+            sellButtons.Add(button);
+        }
     }
 
     public void OpenShop()
@@ -65,6 +89,12 @@ public class ShopManager : MonoBehaviour
     public void BuyItem(ItemScriptableObject item)
     {
         Inventory.Instance.AddItem(item);
+        UpdateShop();
+    }
+
+    public void SellItem(ItemScriptableObject item)
+    {
+        Inventory.Instance.RemoveItem(item);
         UpdateShop();
     }
 }
