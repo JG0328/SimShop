@@ -26,9 +26,9 @@ public class ItemButton : MonoBehaviour
 
         actionButton.onClick.AddListener(() =>
         {
-
+            ShopManager.Instance.BuyItem(item);
         });
 
-        txtAction.SetText("Buy");
+        txtAction.SetText($"Buy for ${item.buyPrice}");
     }
 }

@@ -7,9 +7,9 @@ public class Inventory : MonoBehaviour
 
     public GameObject inventoryObj;
 
-    public Item equippedItem;
+    public int equippedItem;
 
-    public List<Item> items = new();
+    public List<int> items = new();
 
     public static Inventory Instance;
 
@@ -31,5 +31,10 @@ public class Inventory : MonoBehaviour
     {
         PlayerController.Instance.canMove = true;
         inventoryObj.SetActive(false);
+    }
+
+    public void AddItem(ItemScriptableObject item)
+    {
+        items.Add(item.itemId);
     }
 }
