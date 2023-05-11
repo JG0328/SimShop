@@ -90,4 +90,9 @@ public class Inventory : MonoBehaviour
             equipButtons.Add(button);
         }
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
