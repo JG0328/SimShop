@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4db86d0083f292040a5df22de19a7579, type: 3}
-  m_Name: Spooky
+  m_Name: RedDress
   m_EditorClassIdentifier: 
-  itemId: 3
-  itemName: Spooky
-  itemDescription: Is it Halloween yet?
-  itemIcon: {fileID: 0}
-  buyPrice: 300
-  sellPrice: 150
+  itemId: 2
+  itemName: Red Dress
+  itemDescription: Perfect for dates!
+  itemIcon: {fileID: -1634655759, guid: 2906ff8d2380b5f458cd1a8b1ad1eef6, type: 3}
+  buyPrice: 200
+  sellPrice: 100
   itemType: 1

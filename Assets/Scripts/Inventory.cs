@@ -36,10 +36,12 @@ public class Inventory : MonoBehaviour
     public void AddItem(ItemScriptableObject item)
     {
         items.Add(item.itemId);
+        coins -= item.buyPrice;
     }
 
     public void RemoveItem(ItemScriptableObject item)
     {
         items.Remove(item.itemId);
+        coins += item.sellPrice;
     }
 }

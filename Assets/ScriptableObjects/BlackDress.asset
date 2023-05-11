@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4db86d0083f292040a5df22de19a7579, type: 3}
-  m_Name: Casual
+  m_Name: BlackDress
   m_EditorClassIdentifier: 
-  itemId: 1
-  itemName: Casual
-  itemDescription: Typical for weekends.
-  itemIcon: {fileID: 0}
-  buyPrice: 100
-  sellPrice: 50
+  itemId: 3
+  itemName: Black Dress
+  itemDescription: Professional spy look
+  itemIcon: {fileID: -1424574397, guid: a59d98ead89bff74b9c8e6c958648ed0, type: 3}
+  buyPrice: 300
+  sellPrice: 150
   itemType: 1

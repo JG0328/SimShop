@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4db86d0083f292040a5df22de19a7579, type: 3}
-  m_Name: Fancy
+  m_Name: BlackCorset
   m_EditorClassIdentifier: 
-  itemId: 2
-  itemName: Fancy
-  itemDescription: Perfect for dates!
-  itemIcon: {fileID: 0}
-  buyPrice: 200
-  sellPrice: 100
+  itemId: 1
+  itemName: Black Corset
+  itemDescription: A simple black corset
+  itemIcon: {fileID: -1619165723, guid: 09fca0dd8df9f1a4e913688a3fe3ba23, type: 3}
+  buyPrice: 100
+  sellPrice: 50
   itemType: 1

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 
 public class ShopManager : MonoBehaviour
@@ -16,6 +17,8 @@ public class ShopManager : MonoBehaviour
     public List<ItemButton> buyButtons = new();
 
     public List<ItemButton> sellButtons = new();
+
+    public TMP_Text txtCoins;
 
     public GameObject shopItemsContainer;
 
@@ -72,6 +75,8 @@ public class ShopManager : MonoBehaviour
             button.SetupSellButton(item);
             sellButtons.Add(button);
         }
+
+        txtCoins.SetText($"Coins: {Inventory.Instance.coins}");
     }
 
     public void OpenShop()

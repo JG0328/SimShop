@@ -36,6 +36,11 @@ public class ItemButton : MonoBehaviour
         });
 
         txtAction.SetText($"Buy for ${item.buyPrice}");
+
+        if (Inventory.Instance.coins < item.buyPrice)
+        {
+            actionButton.interactable = false;
+        }
     }
 
     public void SetupSellButton(ItemScriptableObject item)
