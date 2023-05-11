@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db86d0083f292040a5df22de19a7579, type: 3}
   m_Name: Fancy
   m_EditorClassIdentifier: 
+  itemId: 2
   itemName: Fancy
+  itemDescription: Perfect for dates!
+  itemIcon: {fileID: 0}
   buyPrice: 200
   sellPrice: 100
   itemType: 1

@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db86d0083f292040a5df22de19a7579, type: 3}
   m_Name: Casual
   m_EditorClassIdentifier: 
+  itemId: 1
   itemName: Casual
+  itemDescription: Typical for weekends.
+  itemIcon: {fileID: 0}
   buyPrice: 100
   sellPrice: 50
   itemType: 1

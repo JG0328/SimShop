@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    public ItemScriptableObject baseItemData;
+    public int itemId;
 
     // Different item types
     public enum Type
