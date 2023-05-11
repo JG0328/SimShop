@@ -9,6 +9,8 @@ public class ShopManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+
+        shopObj.SetActive(false);
     }
 
     public void OpenShop()
