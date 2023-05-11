@@ -29,7 +29,8 @@ public class PlayerController : MonoBehaviour
         _input.x = Input.GetAxisRaw("Horizontal");
         _input.y = Input.GetAxisRaw("Vertical");
 
-        if (Input.GetKeyDown(KeyCode.I))
+        // We can't open the inventory while we're buying.
+        if (Input.GetKeyDown(KeyCode.I) && canMove)
         {
             if (Inventory.Instance.isOpen)
             {
