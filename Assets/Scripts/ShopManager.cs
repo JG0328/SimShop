@@ -34,11 +34,6 @@ public class ShopManager : MonoBehaviour
         shopObj.SetActive(false);
     }
 
-    private void Start()
-    {
-        UpdateShop();
-    }
-
     public void UpdateShop()
     {
         foreach (ItemButton button in buyButtons)
@@ -82,6 +77,9 @@ public class ShopManager : MonoBehaviour
     public void OpenShop()
     {
         PlayerController.Instance.canMove = false;
+
+        UpdateShop();
+
         shopObj.SetActive(true);
     }
 

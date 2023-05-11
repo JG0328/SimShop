@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6008444375908536039}
   - component: {fileID: 3362377612184748377}
   m_Layer: 0
-  m_Name: Dress
+  m_Name: Clothes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: -1011098647
   m_SortingLayer: 1
   m_SortingOrder: 3
-  m_Sprite: {fileID: 522978274, guid: 312a6a4ef21300c45b597de469d8852e, type: 3}
+  m_Sprite: {fileID: -1298207293, guid: 312a6a4ef21300c45b597de469d8852e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -474,8 +474,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8857231345672720249}
   - component: {fileID: 66419692273391999}
-  - component: {fileID: 3782354858583675934}
   - component: {fileID: 6909425809124154611}
+  - component: {fileID: 3782354858583675934}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -521,20 +521,6 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &3782354858583675934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8857231345672720251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53fe5e2fe225bc445a573778b3dae391, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 8
-  canMove: 1
 --- !u!61 &6909425809124154611
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -561,3 +547,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5773814, y: 1.4700556}
   m_EdgeRadius: 0
+--- !u!114 &3782354858583675934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8857231345672720251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53fe5e2fe225bc445a573778b3dae391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 8
+  canMove: 1
+  defaultClothes: {fileID: -1298207293, guid: 312a6a4ef21300c45b597de469d8852e, type: 3}
+  clothesRenderer: {fileID: 3362377612184748377}

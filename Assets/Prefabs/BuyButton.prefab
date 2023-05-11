@@ -856,6 +856,7 @@ GameObject:
   - component: {fileID: 4537502294789907778}
   - component: {fileID: 4537502294789907788}
   - component: {fileID: 4284043459030232969}
+  - component: {fileID: 1264907979912755704}
   m_Layer: 5
   m_Name: BuyButton
   m_TagString: Untagged
@@ -970,3 +971,18 @@ MonoBehaviour:
   imgIcon: {fileID: 4537502294680236234}
   actionButton: {fileID: 4537502294014053029}
   txtAction: {fileID: 4537502294754232436}
+--- !u!114 &1264907979912755704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4537502294789907776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0, y: -5}
+  m_UseGraphicAlpha: 1
