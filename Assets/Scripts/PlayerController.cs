@@ -10,8 +10,11 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 _input;
 
+    public static PlayerController Instance;
+
     private void Awake()
     {
+        Instance = this;
         _rb2d = GetComponent<Rigidbody2D>();
     }
 
